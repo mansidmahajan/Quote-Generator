@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS_Project.css" class="css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <div id="container">
+        <div id="output">Press a button to generate output
+        </div>
+        <button id="btn">
+            Generate quote
+        </button>
+    </div>
+    <script>
+        let btn = document.getElementById('btn')
+        let output = document.getElementById('output')
+        let quote = ['"The best and most beautiful things in the world cannot be seen or even touched they must be felt with the heart." - Helen Keller',
+        '"The best preparation for tomorrow is doing your best today." - H. Jackson Brown',
+        '"Keep your face always toward the sunshine - and shadows will fall behind you." - Walt Whitman',
+        '"We know what we are, but know not what we may be." - William Shakespeare',
+        '"It is during our darkest moments that we must focus to see the light." - Aristotle Onassis',
+        '"I cant change the direction of the wind, but I can adjust my sails to always reach my destination." - Jimmy Dean',
+        '"The person who can bring the spirit of laughter into a room is indeed blessed."" - Bennett Cerf',
+        '"Open your eyes, look within. Are you satisfied with the life you are living?" -  Bob Marley',];
+btn.addEventListener('click',function(){
+    var randomQuote = quote[Math.floor(Math.random() * quote.length)]
+    output.innerHTML = randomQuote;
+})
+    </script>
+</body>
+</html>

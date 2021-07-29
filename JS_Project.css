@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(23, 211, 245);
+}
+h1{
+    text-align: center;
+}
+#container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0;
+    height: 229px;
+    width: 500px;
+    padding: 20px;
+    margin: 100px auto;
+    text-align: center;
+}
+#btn{
+    margin: 18px auto;
+    height: 42px;
+    width: 174px;
+    font-size: 19px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(233, 112, 112);
+}
+#btn:hover{
+    background-color: rgb(226, 36, 71);
+}
+#output{
+    margin: 25px auto;
+    font-size: 23px;
+    color: black;
+}
